@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import goCoronaLogo from "../../assests/logo.png";
+import menuIcon from "../../assests/MENU_ICON.png";
 
 export const NavbarContainer = styled.div`
   display: flex;
@@ -16,13 +18,35 @@ export const NavbarContainer = styled.div`
     scrollNav ? "0 50px 0 50px" : "20px 50px 0 50px"};
 `;
 
+export const NavbarLogo = styled.img.attrs({
+  src: `${goCoronaLogo}`,
+})`
+  @media (max-width: 750px) {
+    margin: auto;
+  }
+`;
+
+export const MenuIcon = styled.img.attrs({
+  src: `${menuIcon}`,
+})`
+  display: none;
+  @media (max-width: 750px) {
+    display: block;
+    cursor: pointer;
+  }
+`;
+
 export const NavbarItemContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 750px) {
+    display: none;
+  }
 `;
 
 export const NavbarItem = styled.a`
-  padding: 14px 29px;
+  padding: 14px 20px;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
@@ -30,9 +54,16 @@ export const NavbarItem = styled.a`
   font-size: 10px;
   letter-spacing: 0.14em;
   color: black;
+  width: max-content;
 
   &:hover {
     color: #ec5863;
     cursor: pointer;
+  }
+`;
+
+export const NavbarButton = styled.div`
+  @media (max-width: 750px) {
+    display: none;
   }
 `;

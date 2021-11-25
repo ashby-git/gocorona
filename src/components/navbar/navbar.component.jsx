@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "../UI/button.styles";
 import {
+  MenuIcon,
+  NavbarButton,
   NavbarContainer,
   NavbarItem,
   NavbarItemContainer,
+  NavbarLogo,
 } from "./navbar.styles";
-import goCoronaLogo from "../../assests/logo.png";
 
 const Navbar = () => {
   const [scrollNav, setScrollNav] = useState(false);
@@ -25,7 +27,8 @@ const Navbar = () => {
   return (
     <>
       <NavbarContainer scrollNav={scrollNav}>
-        <img src={goCoronaLogo} alt="logo" />
+        <MenuIcon />
+        <NavbarLogo />
         <NavbarItemContainer>
           <NavbarItem
             href="https://en.wikipedia.org/wiki/COVID-19"
@@ -52,13 +55,15 @@ const Navbar = () => {
             contact us
           </NavbarItem>
         </NavbarItemContainer>
-        <Button
-          blue
-          href="https://en.wikipedia.org/wiki/COVID-19"
-          target="_blank"
-        >
-          Download
-        </Button>
+        <NavbarButton>
+          <Button
+            blue
+            href="https://en.wikipedia.org/wiki/COVID-19"
+            target="_blank"
+          >
+            Download
+          </Button>
+        </NavbarButton>
       </NavbarContainer>
       <div style={{ height: "2000px" }} />
     </>
