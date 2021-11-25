@@ -4,7 +4,16 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 50px 0 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: ${({ scrollNav }) => (scrollNav ? "50px" : "null")};
+  box-shadow: ${({ scrollNav }) =>
+    scrollNav ? "0px 1px 20px #c8cae7" : "null"};
+  padding: ${({ scrollNav }) =>
+    scrollNav ? "0 50px 0 50px" : "20px 50px 0 50px"};
 `;
 
 export const NavbarItemContainer = styled.div`
