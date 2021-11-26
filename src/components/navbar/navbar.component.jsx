@@ -9,7 +9,7 @@ import {
   NavbarLogo,
 } from "./navbar.styles";
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -27,7 +27,7 @@ const Navbar = () => {
   return (
     <>
       <NavbarContainer scrollNav={scrollNav}>
-        <MenuIcon />
+        <MenuIcon onClick={toggle} />
         <NavbarLogo />
         <NavbarItemContainer>
           <NavbarItem

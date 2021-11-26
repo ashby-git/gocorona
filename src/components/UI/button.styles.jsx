@@ -3,12 +3,16 @@ import styled, { css } from "styled-components";
 export const Button = styled.a`
   border-radius: 5px;
   padding: 14px 29px;
+  width: min-content;
+  height: min-content;
   text-transform: uppercase;
   text-decoration: none;
   border: none;
   font-family: "Raleway", sans-serif;
   font-size: 10px;
   letter-spacing: 0.14em;
+
+  margin: auto;
 
   ${(props) =>
     props.blue &&

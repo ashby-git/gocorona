@@ -15,7 +15,7 @@ export const NavbarContainer = styled.div`
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0px 1px 20px #c8cae7" : "null"};
   padding: ${({ scrollNav }) =>
-    scrollNav ? "0 50px 0 50px" : "20px 50px 0 50px"};
+    scrollNav ? "0 40px 0 40px" : "20px 40px 0 40px"};
 `;
 
 export const NavbarLogo = styled.img.attrs({
@@ -63,6 +63,7 @@ export const NavbarItem = styled.a`
 `;
 
 export const NavbarButton = styled.div`
+  margin-bottom: 5px;
   @media (max-width: 750px) {
     display: none;
   }
