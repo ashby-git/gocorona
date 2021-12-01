@@ -24,11 +24,15 @@ const Navbar = ({ toggle }) => {
     window.addEventListener("scroll", changeNav);
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <NavbarContainer scrollNav={scrollNav}>
         <MenuIcon onClick={toggle} />
-        <NavbarLogo />
+        <NavbarLogo onClick={scrollToTop} />
         <NavbarItemContainer scrollNav={scrollNav}>
           <NavbarItem
             href="https://en.wikipedia.org/wiki/COVID-19"

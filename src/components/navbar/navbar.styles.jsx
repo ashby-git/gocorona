@@ -25,6 +25,7 @@ export const NavbarContainer = styled.div`
 export const NavbarLogo = styled.img.attrs({
   src: `${goCoronaLogo}`,
 })`
+  cursor: pointer;
   @media (max-width: 950px) {
     margin: auto;
   }
