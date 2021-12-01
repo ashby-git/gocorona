@@ -26,7 +26,7 @@ export const MobileXIcon = styled.img.attrs({
   cursor: pointer;
   position: absolute;
   top: 28px;
-  left: 40px;
+  left: 20px;
 `;
 
 export const MenuContainer = styled.div`

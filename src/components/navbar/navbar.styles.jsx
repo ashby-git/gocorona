@@ -15,7 +15,12 @@ export const NavbarContainer = styled.div`
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0px 1px 20px #c8cae7" : "null"};
   padding: ${({ scrollNav }) =>
-    scrollNav ? "0 40px 0 40px" : "20px 40px 0 40px"};
+    scrollNav ? "0 43px 0 52px" : "20px 43px 0 52px"};
+
+  @media (max-width: 750px) {
+    padding: ${({ scrollNav }) =>
+      scrollNav ? "0 40px 0 20px" : "20px 40px 0 20px"};
+  }
 `;
 
 export const NavbarLogo = styled.img.attrs({
