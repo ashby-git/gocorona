@@ -69,7 +69,6 @@ const Navbar = ({ toggle }) => {
           </Button>
         </NavbarButton>
       </NavbarContainer>
-      <div style={{ height: "2000px" }} />
     </>
   );
 };
