@@ -29,7 +29,7 @@ const Navbar = ({ toggle }) => {
       <NavbarContainer scrollNav={scrollNav}>
         <MenuIcon onClick={toggle} />
         <NavbarLogo />
-        <NavbarItemContainer>
+        <NavbarItemContainer scrollNav={scrollNav}>
           <NavbarItem
             href="https://en.wikipedia.org/wiki/COVID-19"
             target="_blank"
