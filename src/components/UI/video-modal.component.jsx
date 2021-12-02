@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import {
   BackDrop,
   Card,
@@ -7,18 +8,35 @@ import {
   ModalElementsContainer,
 } from "./video-modal.styles";
 
+const Backdrop = (props) => {
+  return <BackDrop onClick={props.onCloseModal} />;
+};
+
+const ModalOverlay = (props) => {
+  return (
+    <ModalElementsContainer>
+      <CloseButton onClick={props.onCloseModal}>
+        <CloseIcon />
+      </CloseButton>
+      <Card>{props.children}</Card>
+    </ModalElementsContainer>
+  );
+};
+
 const VideoModal = (props) => {
   return (
     <>
-      <div>
-        <BackDrop onClick={props.onCloseModal} />
-        <ModalElementsContainer>
-          <CloseButton onClick={props.onCloseModal}>
-            <CloseIcon />
-          </CloseButton>
-          <Card>{props.children}</Card>
-        </ModalElementsContainer>
-      </div>
+      {ReactDOM.createPortal(
+        <Backdrop onCloseModal={props.onCloseModal} />,
+        document.getElementById("backdrop-root")
+      )}
+      {ReactDOM.createPortal(
+        <ModalOverlay
+          onCloseModal={props.onCloseModal}
+          children={props.children}
+        />,
+        document.getElementById("overlay-root")
+      )}
     </>
   );
 };

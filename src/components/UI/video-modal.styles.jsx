@@ -42,6 +42,6 @@ export const Card = styled.div`
   width: max-content;
   z-index: 100;
   overflow: hidden;
-  padding: 1rem;
+  padding: 10px;
   top: 25vh;
 `;
