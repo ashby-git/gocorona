@@ -46,6 +46,7 @@ export const VideoTitle = styled.div`
   font-weight: 400;
   font-size: 13px;
   color: #b0b0b0;
+  letter-spacing: 0.08em;
 `;
 
 export const LinkText = styled.div`
@@ -53,4 +54,5 @@ export const LinkText = styled.div`
   font-weight: 400;
   font-size: 9px;
   color: black;
+  letter-spacing: 0.165em;
 `;

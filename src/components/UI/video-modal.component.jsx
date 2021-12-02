@@ -10,13 +10,15 @@ import {
 const VideoModal = (props) => {
   return (
     <>
-      <BackDrop />
-      <ModalElementsContainer>
-        <CloseButton>
-          <CloseIcon />
-        </CloseButton>
-        <Card>{props.children}</Card>
-      </ModalElementsContainer>
+      <div>
+        <BackDrop onClick={props.onCloseModal} />
+        <ModalElementsContainer>
+          <CloseButton onClick={props.onCloseModal}>
+            <CloseIcon />
+          </CloseButton>
+          <Card>{props.children}</Card>
+        </ModalElementsContainer>
+      </div>
     </>
   );
 };
