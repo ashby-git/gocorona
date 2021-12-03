@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const TitleContainer = styled.div`
-  display: flex;
-`;
-
-export const Title = styled.div`
+const basicTitle = `
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 44px;
+`;
+
+export const Title = styled.div`
+  ${basicTitle}
   color: black;
   width: 400px;
   margin-bottom: 12px;
@@ -19,16 +19,12 @@ export const Title = styled.div`
 `;
 
 export const TitleBlue = styled.span`
-  font-family: "Rubik", sans-serif;
-  font-weight: 700;
-  font-size: 44px;
+  ${basicTitle}
   color: #4285f4;
 `;
 
 export const TitleRed = styled.span`
-  font-family: "Rubik", sans-serif;
-  font-weight: 700;
-  font-size: 44px;
+  ${basicTitle}
   color: #ec5863;
 `;
 
