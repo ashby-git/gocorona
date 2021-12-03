@@ -11,6 +11,11 @@ export const Title = styled.div`
   color: black;
   width: 400px;
   margin-bottom: 12px;
+
+  @media (max-width: 950px) {
+    text-align: center;
+    width: 343px;
+  }
 `;
 
 export const TitleBlue = styled.span`
@@ -35,4 +40,9 @@ export const Text = styled.div`
   letter-spacing: 0.08em;
   width: 363px;
   margin-bottom: 24px;
+
+  @media (max-width: 950px) {
+    text-align: center;
+    width: 343px;
+  }
 `;
