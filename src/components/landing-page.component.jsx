@@ -3,7 +3,7 @@ import TitleTextButton from "./title-text-button.component";
 
 const LandingPage = () => {
   return (
-    <div>
+    <>
       <TitleTextButton
         title={"Take care of your family's "}
         titleBlue={"health."}
@@ -19,7 +19,7 @@ const LandingPage = () => {
         titleBlue="experts."
         text="Book appointments or submit queries into thousands of forums concerning health issues and prevention against noval Corona Virus."
       />
-    </div>
+    </>
   );
 };
 
