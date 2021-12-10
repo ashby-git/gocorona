@@ -1,4 +1,5 @@
 import React from "react";
+import { Rectangle } from "../UI/rectangle.styles";
 import {
   DoctorImg,
   ImageContainer,
@@ -13,11 +14,20 @@ import TitleTextButton from "./title-text-button.component";
 // TODO import button to TitleTextButton
 // TODO import VideoLinkGroup
 // TODO change styled component names to better ones
+// TODO add background color #FAFBFD
 
 const LandingPage = () => {
   return (
     <>
       <MidPage>
+        <Rectangle
+          height="100%"
+          width="100%"
+          top="0"
+          left="72%"
+          borderRadius="30px"
+          mediaDisplay="none"
+        />
         <ImageContainer>
           <VideoLinkGroupSmall>
             <TempoVidLink />
