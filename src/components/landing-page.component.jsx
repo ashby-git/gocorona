@@ -10,6 +10,10 @@ import {
 } from "./landing-page.styles";
 import TitleTextButton from "./title-text-button.component";
 
+// TODO import button to TitleTextButton
+// TODO import VideoLinkGroup
+// TODO change styled component names to better ones
+
 const LandingPage = () => {
   return (
     <>

@@ -7,9 +7,9 @@ export const MidPage = styled.div`
   flex-direction: row-reverse;
   height: 100%;
 
-  justify-content: center;
-  gap: 4%;
-  /* margin: 0 5px; */
+  justify-content: space-around;
+  /* gap: 4%; */
+  margin: 0 5%;
 
   @media (max-width: 950px) {
     /* flex-wrap: wrap-reverse; */
