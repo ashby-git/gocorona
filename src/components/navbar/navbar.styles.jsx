@@ -6,15 +6,16 @@ export const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
   border-radius: 0 0 10px 10px;
-  position: sticky;
   top: 0;
   z-index: 10;
+  transition: all ease 0.8s;
   background-color: ${({ scrollNav }) => (scrollNav ? "white" : "transparent")};
   height: ${({ scrollNav }) => (scrollNav ? "50px" : "null")};
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0px 1px 20px #c8cae7" : "null"};
   padding: ${({ scrollNav }) =>
     scrollNav ? "0 43px 0 52px" : "20px 43px 0 52px"};
+  position: ${({ scrollNav }) => (scrollNav ? "sticky" : "null")};
 
   @media (max-width: 950px) {
     padding: ${({ scrollNav }) =>
