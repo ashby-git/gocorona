@@ -36,8 +36,8 @@ const VideoLinkGroup = (props) => {
         <PlayIconWhite />
         <PlayIconBlue />
         <TextContainer>
-          <VideoTitle>{props.children}</VideoTitle>
-          <LinkText>WATCH VIDEO</LinkText>
+          <VideoTitle>{props.videoTitle}</VideoTitle>
+          <LinkText>{props.linkText}</LinkText>
         </TextContainer>
       </VideoLinkGroupContainer>
     </>
