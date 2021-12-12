@@ -9,12 +9,17 @@ import {
   VideoLinkGroupSmall,
   TitleTextButtonWrapper,
 } from "./landing-page.styles";
-import TitleTextButton from "./title-text-button.component";
+import TitleTextButton from "../title-text-button/title-text-button.component";
 
 // TODO import button to TitleTextButton
 // TODO import VideoLinkGroup
+
+// TODO change img to % - to scale
+// TODO img and titletextbutton margin top as %
 // TODO change styled component names to better ones
 // TODO add background color #FAFBFD
+
+// TODO navbar and red rectangle alignment fix
 
 const LandingPage = () => {
   return (

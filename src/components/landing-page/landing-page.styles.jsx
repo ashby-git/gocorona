@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import doctorImg from "../assests/Landing-img-doctor.svg";
+import doctorImg from "../../assests/Landing-img-doctor.svg";
 
 export const MidPage = styled.div`
   display: flex;
