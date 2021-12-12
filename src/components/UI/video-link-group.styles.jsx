@@ -16,7 +16,7 @@ export const PlayIconWhite = styled.img.attrs({
   height: 44px;
   width: 44px;
   ${(props) => css`
-    display: ${props.blue ? "none" : "block"};
+    display: ${props.filledIcon ? "none" : "block"};
   `}
 `;
 
@@ -26,7 +26,7 @@ export const PlayIconBlue = styled.img.attrs({
   height: 40px;
   width: 40px;
   ${(props) => css`
-    display: ${props.blue ? "block" : "none"};
+    display: ${props.filledIcon ? "block" : "none"};
   `}
 `;
 
@@ -35,9 +35,6 @@ export const TextContainer = styled.div`
   gap: 5px;
   height: 32px;
   margin: auto 0;
-  @media (max-width: 950px) {
-    display: none;
-  }
 `;
 
 export const VideoTitle = styled.div`
