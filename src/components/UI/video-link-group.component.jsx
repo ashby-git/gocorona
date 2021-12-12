@@ -33,8 +33,8 @@ const VideoLinkGroup = (props) => {
       )}
 
       <VideoLinkGroupContainer onClick={setShowModal}>
-        <PlayIconWhite />
-        <PlayIconBlue />
+        <PlayIconWhite blue={props.blue} />
+        <PlayIconBlue blue={props.blue} />
         <TextContainer>
           <VideoTitle>{props.videoTitle}</VideoTitle>
           <LinkText>{props.linkText}</LinkText>

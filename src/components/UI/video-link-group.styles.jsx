@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 import playIconWhite from "../../assests/play-icon.svg";
 import playIconBlue from "../../assests/video-icon.svg";
@@ -15,20 +15,19 @@ export const PlayIconWhite = styled.img.attrs({
 })`
   height: 44px;
   width: 44px;
-  @media (max-width: 950px) {
-    display: none;
-  }
+  ${(props) => css`
+    display: ${props.blue ? "none" : "block"};
+  `}
 `;
 
 export const PlayIconBlue = styled.img.attrs({
   src: `${playIconBlue}`,
 })`
-  display: none;
-  @media (max-width: 950px) {
-    display: block;
-    height: 40px;
-    width: 40px;
-  }
+  height: 40px;
+  width: 40px;
+  ${(props) => css`
+    display: ${props.blue ? "block" : "none"};
+  `}
 `;
 
 export const TextContainer = styled.div`
