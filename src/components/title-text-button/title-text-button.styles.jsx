@@ -35,10 +35,19 @@ export const Text = styled.div`
   color: #616161;
   letter-spacing: 0.08em;
   width: 363px;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 
   @media (max-width: 950px) {
     text-align: center;
     width: 343px;
+    margin-bottom: 12px;
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  @media (max-width: 950px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 `;

@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const Button = styled.a`
   border-radius: 5px;
   padding: 14px 29px;
-  width: min-content;
+  width: max-content;
   height: min-content;
   text-transform: uppercase;
   text-decoration: none;

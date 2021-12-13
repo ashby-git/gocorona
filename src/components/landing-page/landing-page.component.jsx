@@ -44,6 +44,9 @@ const LandingPage = () => {
             title={"Take care of your family's "}
             titleBlue={"health."}
             text="All in one destination for COVID-19 health queries. Consult 10,000+ health workers about your concerns."
+            redButton
+            buttonLink="https://en.wikipedia.org/wiki/COVID-19"
+            buttonText="get started"
           />
           <VideoLinkGroupNormal>
             <TempoVidLink />

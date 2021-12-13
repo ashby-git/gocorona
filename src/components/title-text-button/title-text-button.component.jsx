@@ -1,5 +1,12 @@
 import React from "react";
-import { Text, Title, TitleBlue, TitleRed } from "./title-text-button.styles";
+import { Button } from "../UI/button.styles";
+import {
+  ButtonContainer,
+  Text,
+  Title,
+  TitleBlue,
+  TitleRed,
+} from "./title-text-button.styles";
 
 //TODO button from navbar branch
 
@@ -12,6 +19,12 @@ const TitleTextButton = (props) => {
         <TitleRed>{props.titleRed}</TitleRed>
       </Title>
       <Text>{props.text}</Text>
+
+      <ButtonContainer>
+        <Button red={props.redButton} href={props.buttonLink} target="_blank">
+          {props.buttonText}
+        </Button>
+      </ButtonContainer>
     </>
   );
 };
