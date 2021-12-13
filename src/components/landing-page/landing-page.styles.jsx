@@ -60,27 +60,6 @@ export const ImageContainer = styled.div`
   }
 `;
 
-export const TempoVidLink = styled.div`
-  height: 44px;
-  width: 228px;
-  background-color: red;
-  /* margin-top: 60px; */
-
-  @media (max-width: 950px) {
-    height: 40px;
-    width: 40px;
-    /* position: absolute;
-    top: 200px;
-    left: 47%; */
-
-    /* position: relative; */
-    /* top: 50%; */
-    /* left: 41%; */
-    /* margin-top: 92px; */
-    /* margin-top: 0; */
-  }
-`;
-
 export const VideoLinkGroupSmall = styled.div`
   display: none;
 

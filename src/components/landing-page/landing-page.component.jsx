@@ -4,15 +4,12 @@ import {
   DoctorImg,
   ImageContainer,
   MidPage,
-  TempoVidLink,
   VideoLinkGroupNormal,
   VideoLinkGroupSmall,
   TitleTextButtonWrapper,
 } from "./landing-page.styles";
 import TitleTextButton from "../title-text-button/title-text-button.component";
-
-// TODO import button to TitleTextButton
-// TODO import VideoLinkGroup
+import VideoLinkGroup from "../UI/video-link-group.component";
 
 // TODO change img to % - to scale
 // TODO img and titletextbutton margin top as %
@@ -35,7 +32,10 @@ const LandingPage = () => {
         />
         <ImageContainer>
           <VideoLinkGroupSmall>
-            <TempoVidLink />
+            <VideoLinkGroup
+              filledIcon
+              source="https://www.youtube.com/embed/Y_N1rTPhv04"
+            />
           </VideoLinkGroupSmall>
           <DoctorImg />
         </ImageContainer>
@@ -49,7 +49,11 @@ const LandingPage = () => {
             buttonText="get started"
           />
           <VideoLinkGroupNormal>
-            <TempoVidLink />
+            <VideoLinkGroup
+              videoTitle="Stay safe with GoCorona"
+              linkText="WATCH VIDEO"
+              source="https://www.youtube.com/embed/Y_N1rTPhv04"
+            />
           </VideoLinkGroupNormal>
         </TitleTextButtonWrapper>
       </MidPage>
