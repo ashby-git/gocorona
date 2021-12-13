@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {
+  Iframe,
   LinkText,
   PlayIconBlue,
   PlayIconWhite,
@@ -20,15 +21,13 @@ const VideoLinkGroup = (props) => {
     <>
       {showModal && (
         <VideoModal onCloseModal={closeModal}>
-          <iframe
-            width="560"
-            height="315"
+          <Iframe
             src={props.source}
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          ></iframe>
+          ></Iframe>
         </VideoModal>
       )}
 
