@@ -7,6 +7,7 @@ import {
   VideoLinkGroupNormal,
   VideoLinkGroupSmall,
   TitleTextButtonWrapper,
+  Background,
 } from "./landing-page.styles";
 import TitleTextButton from "../title-text-button/title-text-button.component";
 import VideoLinkGroup from "../UI/video-link-group.component";
@@ -19,6 +20,7 @@ import VideoLinkGroup from "../UI/video-link-group.component";
 const LandingPage = () => {
   return (
     <>
+      <Background />
       <MidPage>
         <Rectangle
           height="100%"

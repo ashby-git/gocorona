@@ -2,14 +2,25 @@ import styled from "styled-components";
 
 import doctorImg from "../../assests/Landing-img-doctor.svg";
 
+export const Background = styled.div`
+  background-color: #fafbfd;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+`;
+
 export const MidPage = styled.div`
   display: flex;
   flex-direction: row-reverse;
-  height: 100%;
+  height: 100vh;
 
   justify-content: space-around;
   /* gap: 4%; */
-  margin: 0 5%;
+  margin: -60px 5% 0 5%;
+
+  /* background-color: #fafbfd; */
 
   @media (max-width: 950px) {
     /* flex-wrap: wrap-reverse; */
@@ -20,7 +31,7 @@ export const MidPage = styled.div`
 `;
 
 export const TitleTextButtonWrapper = styled.div`
-  margin: 27vh 0 0 0;
+  margin: 34vh 0 0 0;
 
   @media (max-width: 950px) {
     margin: 25px 0 0 0;
@@ -47,7 +58,7 @@ export const ImageContainer = styled.div`
   /* width: max-content; */
   /* margin-top: 153px; */
   /* margin-top: 21vh; */
-  margin-top: 14vh;
+  margin-top: 22vh;
   /* height: 394px; */
   /* width: 547px; */
 
