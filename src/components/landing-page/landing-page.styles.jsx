@@ -20,7 +20,7 @@ export const MidPage = styled.div`
 `;
 
 export const TitleTextButtonWrapper = styled.div`
-  margin: 240px 0 0 0;
+  margin: 27vh 0 0 0;
 
   @media (max-width: 950px) {
     margin: 25px 0 0 0;
@@ -30,8 +30,10 @@ export const TitleTextButtonWrapper = styled.div`
 export const DoctorImg = styled.img.attrs({
   src: `${doctorImg}`,
 })`
-  height: 394px;
-  width: 547px;
+  /* height: 394px; */
+  /* width: 547px; */
+  width: 47.5vw;
+
   /* margin-top: 153px; */
   @media (max-width: 950px) {
     height: 228px;
@@ -43,8 +45,9 @@ export const DoctorImg = styled.img.attrs({
 export const ImageContainer = styled.div`
   /* height: max-content; */
   /* width: max-content; */
-  margin-top: 153px;
-
+  /* margin-top: 153px; */
+  /* margin-top: 21vh; */
+  margin-top: 14vh;
   /* height: 394px; */
   /* width: 547px; */
 
@@ -73,7 +76,7 @@ export const VideoLinkGroupSmall = styled.div`
 `;
 
 export const VideoLinkGroupNormal = styled.div`
-  margin-top: 150px;
+  margin-top: 21vh;
   @media (max-width: 950px) {
     display: none;
   }

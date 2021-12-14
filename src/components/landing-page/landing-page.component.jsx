@@ -11,8 +11,6 @@ import {
 import TitleTextButton from "../title-text-button/title-text-button.component";
 import VideoLinkGroup from "../UI/video-link-group.component";
 
-// TODO change img to % - to scale
-// TODO img and titletextbutton margin top as %
 // TODO change styled component names to better ones
 // TODO add background color #FAFBFD
 
