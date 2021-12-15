@@ -3,7 +3,7 @@ import { Rectangle } from "../UI/rectangle.styles";
 import {
   DoctorImg,
   ImageContainer,
-  MidPage,
+  PageContent,
   VideoLinkGroupNormal,
   VideoLinkGroupSmall,
   TitleTextButtonWrapper,
@@ -12,16 +12,11 @@ import {
 import TitleTextButton from "../title-text-button/title-text-button.component";
 import VideoLinkGroup from "../UI/video-link-group.component";
 
-// TODO change styled component names to better ones
-// TODO add background color #FAFBFD
-
-// TODO navbar and red rectangle alignment fix
-
 const LandingPage = () => {
   return (
     <>
       <Background />
-      <MidPage>
+      <PageContent>
         <Rectangle
           height="100%"
           width="100%"
@@ -56,7 +51,7 @@ const LandingPage = () => {
             />
           </VideoLinkGroupNormal>
         </TitleTextButtonWrapper>
-      </MidPage>
+      </PageContent>
     </>
   );
 };

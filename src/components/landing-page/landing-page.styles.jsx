@@ -11,7 +11,7 @@ export const Background = styled.div`
   z-index: -1;
 `;
 
-export const MidPage = styled.div`
+export const PageContent = styled.div`
   display: flex;
   flex-direction: row-reverse;
   height: 100vh;
@@ -27,6 +27,8 @@ export const MidPage = styled.div`
     display: grid;
     justify-content: center;
     gap: 0;
+
+    height: 100%;
   }
 `;
 
@@ -34,7 +36,7 @@ export const TitleTextButtonWrapper = styled.div`
   margin: 34vh 0 0 0;
 
   @media (max-width: 950px) {
-    margin: 25px 0 0 0;
+    margin: 25px 0 42px 0;
   }
 `;
 
@@ -44,6 +46,7 @@ export const DoctorImg = styled.img.attrs({
   /* height: 394px; */
   /* width: 547px; */
   width: 47.5vw;
+  max-width: 760px;
 
   /* margin-top: 153px; */
   @media (max-width: 950px) {
@@ -63,7 +66,7 @@ export const ImageContainer = styled.div`
   /* width: 547px; */
 
   @media (max-width: 950px) {
-    margin-top: 92px;
+    margin-top: 62px;
 
     /* height: 228px; */
     /* width: 316px; */
@@ -87,7 +90,7 @@ export const VideoLinkGroupSmall = styled.div`
 `;
 
 export const VideoLinkGroupNormal = styled.div`
-  margin-top: 21vh;
+  margin-top: 29vh;
   @media (max-width: 950px) {
     display: none;
   }
