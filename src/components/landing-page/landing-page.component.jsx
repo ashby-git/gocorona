@@ -19,10 +19,10 @@ const LandingPage = () => {
       <PageContent>
         <Rectangle
           height="100%"
-          width="100%"
+          width="28%"
           top="0"
           left="72%"
-          borderRadius="30px"
+          borderRadius="30px 0 0 30px"
           mediaDisplay="none"
         />
         <ImageContainer>
