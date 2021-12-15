@@ -15,19 +15,13 @@ export const PageContent = styled.div`
   display: flex;
   flex-direction: row-reverse;
   height: 100vh;
-
   justify-content: space-around;
-  /* gap: 4%; */
   margin: -60px 5% 0 5%;
 
-  /* background-color: #fafbfd; */
-
   @media (max-width: 950px) {
-    /* flex-wrap: wrap-reverse; */
     display: grid;
     justify-content: center;
     gap: 0;
-
     height: 100%;
   }
 `;
@@ -43,37 +37,20 @@ export const TitleTextButtonWrapper = styled.div`
 export const DoctorImg = styled.img.attrs({
   src: `${doctorImg}`,
 })`
-  /* height: 394px; */
-  /* width: 547px; */
   width: 47.5vw;
   max-width: 760px;
 
-  /* margin-top: 153px; */
   @media (max-width: 950px) {
     height: 228px;
     width: 316px;
-    /* margin-top: 92px; */
   }
 `;
 
 export const ImageContainer = styled.div`
-  /* height: max-content; */
-  /* width: max-content; */
-  /* margin-top: 153px; */
-  /* margin-top: 21vh; */
   margin-top: 22vh;
-  /* height: 394px; */
-  /* width: 547px; */
 
   @media (max-width: 950px) {
     margin-top: 62px;
-
-    /* height: 228px; */
-    /* width: 316px; */
-
-    TempoVidLink {
-      display: none;
-    }
   }
 `;
 
