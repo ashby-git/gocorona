@@ -5,6 +5,7 @@ export const Rectangle = styled.div`
   position: absolute;
   z-index: -1;
   height: ${(props) => props.height};
+  min-height: ${(props) => props.minHeight};
   width: ${(props) => props.width};
   border-radius: ${(props) => props.borderRadius};
   top: ${(props) => props.top};

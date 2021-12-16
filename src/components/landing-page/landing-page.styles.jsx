@@ -9,14 +9,17 @@ export const Background = styled.div`
   height: 100%;
   width: 100%;
   z-index: -1;
+  min-height: 600px;
 `;
 
 export const PageContent = styled.div`
   display: flex;
   flex-direction: row-reverse;
   height: 100vh;
+  min-height: 600px;
   justify-content: space-around;
   margin: -60px 5% 0 5%;
+  overflow: hidden;
 
   @media (max-width: 950px) {
     display: grid;
