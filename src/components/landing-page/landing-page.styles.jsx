@@ -10,6 +10,7 @@ export const Background = styled.div`
   width: 100%;
   z-index: -1;
   min-height: 600px;
+  min-width: 362px;
 `;
 
 export const PageContent = styled.div`
@@ -26,6 +27,7 @@ export const PageContent = styled.div`
     justify-content: center;
     gap: 0;
     height: 100%;
+    margin: -60px 0 0 0;
   }
 `;
 
@@ -53,7 +55,7 @@ export const ImageContainer = styled.div`
   margin-top: 22vh;
 
   @media (max-width: 950px) {
-    margin-top: 62px;
+    margin: 62px auto 0 auto;
   }
 `;
 
@@ -64,7 +66,7 @@ export const VideoLinkGroupSmall = styled.div`
     display: block;
     position: relative;
     top: 50%;
-    left: 41%;
+    left: 44%;
     margin-top: 0;
   }
 `;
