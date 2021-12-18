@@ -1,4 +1,5 @@
 import React from "react";
+import TitleTextButton from "../title-text-button/title-text-button.component";
 import {
   MobileImage,
   MobileImagesContainer,
@@ -6,8 +7,8 @@ import {
   MobilePageContainer,
   MobileRightSide,
   MobileShadow,
-  TempBox,
   TempRectangle,
+  TitleTextButtonWrapper,
 } from "./mobile-page.styles";
 
 const MobilePage = () => {
@@ -43,7 +44,16 @@ const MobilePage = () => {
           </MobileImagesContainer>
         </MobileLeftSide>
         <MobileRightSide>
-          <TempBox />
+          <TitleTextButtonWrapper>
+            <TitleTextButton
+              title={"Stay safe with Go"}
+              titleRed={"Corona."}
+              text="24x7 Support and user friendly mobile platform to bring healthcare to your fingertips. Signup and be a part of the new health culture."
+              redButton
+              buttonLink="https://en.wikipedia.org/wiki/COVID-19"
+              buttonText="features"
+            />
+          </TitleTextButtonWrapper>
         </MobileRightSide>
       </MobilePageContainer>
     </>

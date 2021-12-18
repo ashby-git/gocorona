@@ -76,14 +76,11 @@ export const MobileRightSide = styled.div`
   width: 50%;
 
   @media (max-width: 950px) {
-    width: 100%;
     justify-content: center;
-    margin: 70px 0 40px 0;
+    margin: 70px auto 40px auto;
   }
 `;
 
-export const TempBox = styled.div`
-  width: 379px;
-  height: 238px;
-  background-color: red;
+export const TitleTextButtonWrapper = styled.div`
+  width: max-content;
 `;
