@@ -19,6 +19,10 @@ export const Button = styled.a`
     css`
       background-color: #4285f4;
       color: white;
+
+      &:hover {
+        background-color: #1d5dc4;
+      }
     `};
 
   ${(props) =>
@@ -26,6 +30,10 @@ export const Button = styled.a`
     css`
       background-color: #ec5863;
       color: white;
+
+      &:hover {
+        background-color: #c4323c;
+      }
     `};
 
   &:hover {
