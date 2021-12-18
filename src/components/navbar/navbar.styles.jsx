@@ -43,10 +43,20 @@ export const MenuIcon = styled.img.attrs({
 `;
 
 export const NavbarItemContainer = styled.div`
-  margin: ${({ scrollNav }) => (scrollNav ? "0 20px 0 auto" : "0 13% 0 auto")};
+  margin: ${({ scrollNav }) =>
+    scrollNav ? "auto 20px auto auto" : "auto 0 auto auto"};
 
   @media (max-width: 950px) {
     display: none;
+  }
+`;
+
+export const LeftSide = styled.div`
+  display: flex;
+  width: ${({ scrollNav }) => (scrollNav ? "100%" : "72%")};
+
+  @media (max-width: 950px) {
+    width: 100%;
   }
 `;
 
@@ -68,7 +78,8 @@ export const NavbarItem = styled.a`
 `;
 
 export const NavbarButton = styled.div`
-  margin-bottom: 5px;
+  margin: 0 0 5px auto;
+
   @media (max-width: 950px) {
     display: none;
   }

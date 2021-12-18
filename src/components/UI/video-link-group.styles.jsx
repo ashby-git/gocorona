@@ -52,3 +52,18 @@ export const LinkText = styled.div`
   color: black;
   letter-spacing: 0.165em;
 `;
+
+export const Iframe = styled.iframe`
+  width: 640px;
+  height: 360px;
+
+  @media (max-width: 690px) {
+    width: 426px;
+    height: 240px;
+  }
+
+  @media (max-width: 475px) {
+    width: 256px;
+    height: 144px;
+  }
+`;

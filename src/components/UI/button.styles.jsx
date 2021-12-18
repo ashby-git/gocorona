@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const Button = styled.a`
   border-radius: 5px;
   padding: 14px 29px;
-  width: min-content;
+  width: max-content;
   height: min-content;
   text-transform: uppercase;
   text-decoration: none;
@@ -19,6 +19,10 @@ export const Button = styled.a`
     css`
       background-color: #4285f4;
       color: white;
+
+      &:hover {
+        background-color: #1d5dc4;
+      }
     `};
 
   ${(props) =>
@@ -26,6 +30,10 @@ export const Button = styled.a`
     css`
       background-color: #ec5863;
       color: white;
+
+      &:hover {
+        background-color: #c4323c;
+      }
     `};
 
   &:hover {
