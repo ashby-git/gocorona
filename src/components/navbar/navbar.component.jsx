@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "../UI/button.styles";
 import {
+  LeftSide,
   MenuIcon,
   NavbarButton,
   NavbarContainer,
@@ -32,33 +33,36 @@ const Navbar = ({ toggle }) => {
     <>
       <NavbarContainer scrollNav={scrollNav}>
         <MenuIcon onClick={toggle} />
-        <NavbarLogo onClick={scrollToTop} />
-        <NavbarItemContainer scrollNav={scrollNav}>
-          <NavbarItem
-            href="https://en.wikipedia.org/wiki/COVID-19"
-            target="_blank"
-          >
-            home
-          </NavbarItem>
-          <NavbarItem
-            href="https://en.wikipedia.org/wiki/COVID-19"
-            target="_blank"
-          >
-            features
-          </NavbarItem>
-          <NavbarItem
-            href="https://en.wikipedia.org/wiki/COVID-19"
-            target="_blank"
-          >
-            support
-          </NavbarItem>
-          <NavbarItem
-            href="https://en.wikipedia.org/wiki/COVID-19"
-            target="_blank"
-          >
-            contact us
-          </NavbarItem>
-        </NavbarItemContainer>
+
+        <LeftSide scrollNav={scrollNav}>
+          <NavbarLogo onClick={scrollToTop} />
+          <NavbarItemContainer scrollNav={scrollNav}>
+            <NavbarItem
+              href="https://en.wikipedia.org/wiki/COVID-19"
+              target="_blank"
+            >
+              home
+            </NavbarItem>
+            <NavbarItem
+              href="https://en.wikipedia.org/wiki/COVID-19"
+              target="_blank"
+            >
+              features
+            </NavbarItem>
+            <NavbarItem
+              href="https://en.wikipedia.org/wiki/COVID-19"
+              target="_blank"
+            >
+              support
+            </NavbarItem>
+            <NavbarItem
+              href="https://en.wikipedia.org/wiki/COVID-19"
+              target="_blank"
+            >
+              contact us
+            </NavbarItem>
+          </NavbarItemContainer>
+        </LeftSide>
         <NavbarButton>
           <Button
             blue
