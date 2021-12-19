@@ -32,13 +32,19 @@ export const MobileImagesContainer = styled.div`
 
 export const MobileImage = styled.img.attrs({ src: `${mobileImage}` })`
   width: 26vw;
+  min-width: 300px;
   /* width: 300px; */
-  margin: 20% 0;
+  margin: 22% 0;
   /* filter: drop-shadow(2px 4px 32px rgba(0, 0, 0, 0.12)); */
+  z-index: 1;
 `;
 
 export const MobileShadow = styled.img.attrs({ src: `${mobileShadow}` })`
   width: 18vw;
+
+  height: 4vh;
+  object-fit: cover;
+  object-position: bottom;
   /* width: 206px; */
   margin: -14vh auto 0 auto;
   /* z-index: -1; */
@@ -46,10 +52,13 @@ export const MobileShadow = styled.img.attrs({ src: `${mobileShadow}` })`
 
 export const TempRectangle = styled.div`
   margin: ${(props) => props.margin};
+  padding: ${(props) => props.padding};
+  min-width: ${(props) => props.minWidth};
+  padding-bottom: ${(props) => props.paddingBottom};
 
   background-color: #ec5863;
   position: absolute;
-  /* z-index: -1; */
+
   height: ${(props) => props.height};
   min-height: ${(props) => props.minHeight};
   width: ${(props) => props.width};

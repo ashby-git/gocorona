@@ -17,29 +17,40 @@ const MobilePage = () => {
       <MobilePageContainer>
         <MobileLeftSide>
           <TempRectangle
-            margin="-40% 0 0 0"
-            height="147px"
-            width="147px"
-            left="8%"
-            borderRadius="30px"
+            margin="-37.5% 0 0 0"
+            // height="0"
+            width="max(12.76%, 147px)"
+            padding="0 0 max(12.76%, 147px) 0"
+            // paddingBottom="max(12.76%, 147px)"
+            // height="147px"
+            // width="147px"
+            // minWidth="147px"
+            left="9%"
+            mediaLeft="33%"
+            borderRadius="2.6vw"
           />
           <TempRectangle
-            margin="40% 0 0 0"
-            height="77px"
-            width="77px"
+            margin="39% 0 0 0"
+            padding="0 0 max(6.68%, 77px) 0"
+            width="max(6.68%, 77px)"
+            // minWidth="77px"
             left="11%"
-            borderRadius="30px"
+            mediaLeft="36%"
+            borderRadius="2.6vw"
           />
           <TempRectangle
             margin="18% 0 0 0"
-            height="77px"
-            width="77px"
-            left="32%"
-            borderRadius="30px"
+            padding="0 0 max(6.68%, 77px) 0"
+            width="max(6.68%, 77px)"
+            minWidth="77px"
+            left="31%"
+            mediaLeft="56%"
+            borderRadius="2.6vw"
           />
 
           <MobileImagesContainer>
             <MobileImage />
+
             <MobileShadow />
           </MobileImagesContainer>
         </MobileLeftSide>
