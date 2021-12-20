@@ -19,6 +19,7 @@ export const MobileLeftSide = styled.div`
   justify-content: center;
   align-items: center;
   width: 50%;
+  /* position: relative; */
 
   @media (max-width: 950px) {
     width: 100%;
@@ -76,6 +77,26 @@ export const TempRectangle = styled.div`
     right: ${(props) => props.mediaRight};
     bottom: ${(props) => props.mediaBottom};
     left: ${(props) => props.mediaLeft};
+  }
+
+  @media (max-width: 1152px) {
+    /* left: ${(props) => props.testLeft}; */
+    margin: ${(props) => props.testMargin};
+  }
+`;
+
+export const RectangleWrapper = styled.div`
+  /* position: static; */
+  @media (max-width: 1152px) {
+    position: relative;
+    /* margin: min(-37.5%, -432px) 0 0 0; */
+    /* margin: -102% 0 0 0; */
+    margin: min(-102%, -588px) 0 0 0;
+    right: 35px;
+
+    /* left: ${(props) => props.left};
+    right: ${(props) => props.right};
+    margin: ${(props) => props.margin}; */
   }
 `;
 
