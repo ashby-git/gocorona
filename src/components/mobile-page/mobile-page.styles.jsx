@@ -11,6 +11,7 @@ export const MobilePageContainer = styled.div`
   @media (max-width: 950px) {
     /* flex-wrap: wrap; */
     display: block;
+    /* margin: 0 0 0 50px; */
   }
 `;
 
@@ -22,6 +23,8 @@ export const MobileLeftSide = styled.div`
   /* position: relative; */
 
   @media (max-width: 950px) {
+    /* width: 90%;
+    margin: 80px 0 0 10%; */
     width: 100%;
     margin: 80px 0 0 0;
   }
@@ -35,20 +38,28 @@ export const MobileImage = styled.img.attrs({ src: `${mobileImage}` })`
   width: 26vw;
   min-width: 300px;
   /* width: 300px; */
-  margin: 22% 0;
+  margin: 22% 0 22% 8%;
   /* filter: drop-shadow(2px 4px 32px rgba(0, 0, 0, 0.12)); */
-  z-index: 1;
+  z-index: 2;
 `;
 
 export const MobileShadow = styled.img.attrs({ src: `${mobileShadow}` })`
-  width: 18vw;
-
+  /* width: 18vw;
   height: 4vh;
   object-fit: cover;
   object-position: bottom;
-  /* width: 206px; */
-  margin: -14vh auto 0 auto;
-  /* z-index: -1; */
+  margin: -14vh auto 0 auto; */
+
+  width: max(18vw, 207px);
+  /* margin: max(48%, 553px) 0 0 0; */
+  margin: min(-39%, -117px) 0 0 0;
+  z-index: 1;
+  left: 23%;
+  position: absolute;
+`;
+
+export const MobileShadowWrapper = styled.div`
+  position: relative;
 `;
 
 export const TempRectangle = styled.div`
@@ -116,7 +127,7 @@ export const MobileRightSide = styled.div`
 
   @media (max-width: 950px) {
     justify-content: center;
-    margin: 70px auto 40px auto;
+    margin: 0 auto 40px auto;
   }
 `;
 
