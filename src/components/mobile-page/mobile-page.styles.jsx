@@ -77,11 +77,14 @@ export const TempRectangle = styled.div`
     right: ${(props) => props.mediaRight};
     bottom: ${(props) => props.mediaBottom};
     left: ${(props) => props.mediaLeft};
+
+    border-radius: ${(props) => props.testBorderRadius};
+    margin: ${(props) => props.margin950};
   }
 
   @media (max-width: 1152px) {
     /* left: ${(props) => props.testLeft}; */
-    margin: ${(props) => props.testMargin};
+    /* margin: ${(props) => props.testMargin}; */
   }
 `;
 
@@ -91,12 +94,18 @@ export const RectangleWrapper = styled.div`
     position: relative;
     /* margin: min(-37.5%, -432px) 0 0 0; */
     /* margin: -102% 0 0 0; */
-    margin: min(-102%, -588px) 0 0 0;
-    right: 35px;
+    /* margin: min(-102%, -588px) 0 0 0;
+    right: 35px; */
 
-    /* left: ${(props) => props.left};
+    left: ${(props) => props.left};
     right: ${(props) => props.right};
-    margin: ${(props) => props.margin}; */
+    margin: ${(props) => props.margin};
+  }
+  @media (max-width: 950px) {
+    margin: ${(props) => props.margin950};
+  }
+  @media (max-width: 580px) {
+    margin: ${(props) => props.margin580};
   }
 `;
 
