@@ -3,7 +3,7 @@ import styled from "styled-components";
 import mobileImage from "../../assests/mobile-screen.svg";
 import mobileShadow from "../../assests/mobile-screen-shadow.svg";
 
-export const MobilePageContainer = styled.div`
+export const MobileSectionContainer = styled.div`
   display: flex;
   background-color: white;
 

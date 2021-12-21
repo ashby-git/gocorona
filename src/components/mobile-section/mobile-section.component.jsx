@@ -5,17 +5,17 @@ import {
   MobileImage,
   MobileImagesContainer,
   MobileLeftSide,
-  MobilePageContainer,
+  MobileSectionContainer,
   MobileRightSide,
   MobileShadow,
   MobileShadowWrapper,
   RectangleWrapper,
   TitleTextButtonWrapper,
-} from "./mobile-page.styles";
+} from "./mobile-section.styles";
 
-const MobilePage = () => {
+const MobileSection = () => {
   return (
-    <MobilePageContainer>
+    <MobileSectionContainer>
       <MobileLeftSide>
         <RectangleWrapper
           margin="min(-102%, -588px) 0 0 0"
@@ -71,8 +71,8 @@ const MobilePage = () => {
           />
         </TitleTextButtonWrapper>
       </MobileRightSide>
-    </MobilePageContainer>
+    </MobileSectionContainer>
   );
 };
 
-export default MobilePage;
+export default MobileSection;
