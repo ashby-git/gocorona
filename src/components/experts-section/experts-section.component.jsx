@@ -3,6 +3,8 @@ import StatisticsBox from "../statistics-box/statistics-box.component";
 import TitleTextButton from "../title-text-button/title-text-button.component";
 import {
   BottomSide,
+  ExpertsSectionContainer,
+  ExpertsVideoImg,
   LeftSide,
   RightSide,
   StatisticsBoxWrapper,
@@ -12,7 +14,7 @@ import {
 
 const ExpertsSection = () => {
   return (
-    <>
+    <ExpertsSectionContainer>
       <TopSide>
         <StatisticsBoxWrapper>
           <StatisticsBox
@@ -38,9 +40,11 @@ const ExpertsSection = () => {
             />
           </TitleTextButtonWrapper>
         </LeftSide>
-        <RightSide></RightSide>
+        <RightSide>
+          <ExpertsVideoImg />
+        </RightSide>
       </BottomSide>
-    </>
+    </ExpertsSectionContainer>
   );
 };
 
