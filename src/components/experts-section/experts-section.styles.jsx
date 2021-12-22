@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import expertsVideoImg from "../../assests/video-group.svg";
+import closeIcon from "../../assests/MENU_X.svg";
 
 export const ExpertsSectionContainer = styled.div`
   background-color: #fafbfd;
@@ -62,7 +63,36 @@ export const ExpertsVideoImg = styled.img.attrs({
 })`
   width: max(46vw, 345px);
   cursor: pointer;
+  display: ${(props) => (props.hide ? "none" : "block")};
+
   @media (max-width: 950px) {
     margin: 40px 0 0 0;
   }
+`;
+
+export const Iframe = styled.iframe`
+  width: max(46vw, 345px);
+  height: max(26vw, 187px);
+  @media (max-width: 950px) {
+    margin: 40px 0 0 0;
+  }
+`;
+
+export const CloseButton = styled.div`
+  border-radius: 50%;
+  background-color: white;
+  height: 13px;
+  width: 13px;
+  position: absolute;
+  padding: 7px;
+  margin: -27px 0 0 0;
+  cursor: pointer;
+  @media (max-width: 950px) {
+    margin: 10px 0 0 0;
+  }
+`;
+
+export const CloseIcon = styled.img.attrs({ src: `${closeIcon}` })`
+  height: 13px;
+  width: 13px;
 `;

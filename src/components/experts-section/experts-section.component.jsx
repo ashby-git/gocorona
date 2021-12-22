@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import StatisticsBox from "../statistics-box/statistics-box.component";
 import TitleTextButton from "../title-text-button/title-text-button.component";
 import {
   BottomSide,
+  CloseButton,
+  CloseIcon,
   ExpertsSectionContainer,
   ExpertsVideoImg,
+  Iframe,
   LeftSide,
   RightSide,
   StatisticsBoxWrapper,
@@ -13,6 +16,11 @@ import {
 } from "./experts-section.styles";
 
 const ExpertsSection = () => {
+  const [showVideo, setShowVideo] = useState(false);
+
+  const closeVideo = () => {
+    setShowVideo(false);
+  };
   return (
     <ExpertsSectionContainer>
       <TopSide>
@@ -41,7 +49,21 @@ const ExpertsSection = () => {
           </TitleTextButtonWrapper>
         </LeftSide>
         <RightSide>
-          <ExpertsVideoImg />
+          <ExpertsVideoImg onClick={setShowVideo} hide={showVideo} />
+          {showVideo && (
+            <>
+              <CloseButton onClick={closeVideo}>
+                <CloseIcon />
+              </CloseButton>
+              <Iframe
+                src="https://www.youtube.com/embed/Y_N1rTPhv04"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
+            </>
+          )}
         </RightSide>
       </BottomSide>
     </ExpertsSectionContainer>
