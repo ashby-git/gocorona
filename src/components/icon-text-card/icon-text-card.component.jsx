@@ -9,7 +9,7 @@ import {
 const IconTextCard = (props) => {
   return (
     <Card>
-      <CardIcon src={props.cardIcon} />
+      <CardIcon src={props.cardIcon} alt="icon" />
       <CardTitle>{props.title}</CardTitle>
       <CardDescription>{props.description}</CardDescription>
     </Card>

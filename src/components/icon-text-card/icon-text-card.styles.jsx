@@ -10,9 +10,10 @@ export const Card = styled.div`
   border-radius: 8px;
 `;
 
-export const CardIcon = styled.img.attrs((props) => ({
-  src: props.cardIcon,
-}))``;
+export const CardIcon = styled.img`
+  height: max(8vw, 92px);
+  /* width: 72px; */
+`;
 
 export const CardTitle = styled.h1`
   font-family: "Rubik", sans-serif;
