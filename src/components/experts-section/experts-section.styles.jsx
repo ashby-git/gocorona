@@ -5,6 +5,7 @@ import closeIcon from "../../assests/MENU_X.svg";
 
 export const ExpertsSectionContainer = styled.div`
   background-color: #fafbfd;
+  overflow: hidden;
 `;
 
 export const TopSide = styled.div`
@@ -15,6 +16,7 @@ export const TopSide = styled.div`
 export const StatisticsBoxWrapper = styled.div`
   margin: 15vh 0 11.5vh 0;
   z-index: 2;
+  position: relative;
   @media (max-width: 950px) {
     margin: 40px 0 11.5vh 0;
   }
