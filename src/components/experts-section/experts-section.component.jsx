@@ -11,6 +11,7 @@ import {
   LeftSide,
   RightSide,
   StatisticsBoxWrapper,
+  TempRectangle,
   TitleTextButtonWrapper,
   TopSide,
 } from "./experts-section.styles";
@@ -25,6 +26,33 @@ const ExpertsSection = () => {
     <ExpertsSectionContainer>
       <TopSide>
         <StatisticsBoxWrapper>
+          <TempRectangle
+            margin="60px 0 0 -25px"
+            width="66px"
+            height="66px"
+            mediaMargin="60px 0 0 -25px"
+            borderRadius="16px"
+            transform="rotate(-30deg)"
+            zIndex="-1"
+          />
+          <TempRectangle
+            margin="-40px 0 0 200px"
+            width="97px"
+            height="97px"
+            mediaMargin="60px 0 0 -25px"
+            borderRadius="30px"
+            transform="rotate(105deg)"
+            zIndex="-1"
+          />
+          <TempRectangle
+            margin="-5px 0 0 575px"
+            width="127.5px"
+            height="127.5px"
+            mediaMargin="60px 0 0 -25px"
+            borderRadius="30px"
+            transform="rotate(-30deg)"
+            zIndex="-1"
+          />
           <StatisticsBox
             statistic1="2m"
             description1="users"
