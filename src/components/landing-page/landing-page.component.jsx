@@ -25,6 +25,7 @@ const LandingPage = () => {
           left="72%"
           borderRadius="30px 0 0 30px"
           mediaDisplay="none"
+          zIndex="-1"
         />
         <ImageContainer>
           <VideoLinkGroupSmall>
