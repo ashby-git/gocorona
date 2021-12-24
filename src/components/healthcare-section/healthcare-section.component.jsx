@@ -4,7 +4,10 @@ import icon1 from "../../assests/healthcare-icon-1.svg";
 import icon2 from "../../assests/healthcare-icon-2.svg";
 import icon3 from "../../assests/healthcare-icon-3.svg";
 import {
+  AppleAppStore,
+  AppStoreImagesContainer,
   CardGroup,
+  GooglePlayStore,
   HealthcareSectionContainer,
   HealthcareText,
   HealthcareTitle,
@@ -40,6 +43,10 @@ const HealthcareSection = () => {
           description="Bringing premium healthcare features to your fingertips."
         />
       </CardGroup>
+      <AppStoreImagesContainer>
+        <GooglePlayStore />
+        <AppleAppStore />
+      </AppStoreImagesContainer>
     </HealthcareSectionContainer>
   );
 };

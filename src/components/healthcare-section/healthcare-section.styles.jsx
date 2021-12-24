@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+import googlePlayStore from "../../assests/google-app-store.svg";
+import appleAppStore from "../../assests/apple-app-store.svg";
+
 export const HealthcareSectionContainer = styled.div``;
 
 const basicTitle = `
@@ -47,3 +50,18 @@ export const HealthcareText = styled.p`
   max-width: 600px;
   margin: 0 auto max(8vh, 48px) auto;
 `;
+
+export const AppStoreImagesContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 5vw;
+  margin: 0 auto 46px auto;
+  width: max-content;
+`;
+
+export const GooglePlayStore = styled.img.attrs({
+  src: `${googlePlayStore}`,
+})``;
+export const AppleAppStore = styled.img.attrs({
+  src: `${appleAppStore}`,
+})``;
