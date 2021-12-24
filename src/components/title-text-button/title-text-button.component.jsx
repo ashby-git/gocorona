@@ -8,8 +8,6 @@ import {
   TitleRed,
 } from "./title-text-button.styles";
 
-//TODO button from navbar branch
-
 const TitleTextButton = (props) => {
   return (
     <>
