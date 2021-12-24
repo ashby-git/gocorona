@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ExpertsSection from "../components/experts-section/experts-section.component";
+import HealthcareSection from "../components/healthcare-section/healthcare-section.component";
 import LandingPage from "../components/landing-page/landing-page.component";
 import MobileMenu from "../components/mobile-menu/mobile-menu.component";
 import MobileSection from "../components/mobile-section/mobile-section.component";
@@ -20,6 +21,7 @@ const Pages = () => {
       <LandingPage />
       <MobileSection />
       <ExpertsSection />
+      <HealthcareSection />
     </PagesContainer>
   );
 };

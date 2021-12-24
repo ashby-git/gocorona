@@ -13,8 +13,8 @@ import {
   HealthcareText,
   HealthcareTitle,
   HealthcareTitleBlack,
-  TempRectangle,
 } from "./healthcare-section.styles";
+import { Rectangle } from "../UI/rectangle.styles";
 
 const HealthcareSection = () => {
   return (
@@ -30,7 +30,7 @@ const HealthcareSection = () => {
       </HealthcareText>
       <CardGroup>
         <CardWrapper>
-          <TempRectangle
+          <Rectangle
             margin="max(87%, 242.5px) 0 0 0"
             width="max(5.7vw, 65.75px)"
             padding="0 0 max(5.7vw, 65.75px) 0"
@@ -39,7 +39,7 @@ const HealthcareSection = () => {
             transform="rotate(-30deg)"
             zIndex="-1"
           />
-          <TempRectangle
+          <Rectangle
             margin="max(15%, 41.8px) 0 0 0"
             width="max(8.4vw, 96.96px)"
             padding="0 0 max(8.4vw, 96.96px) 0"
@@ -57,7 +57,7 @@ const HealthcareSection = () => {
           />
         </CardWrapper>
         <CardWrapper>
-          <TempRectangle
+          <Rectangle
             margin="max(65%, 181px) 0 0 0"
             width="max(11vw, 127.47px)"
             padding="0 0 max(11vw, 127.47px) 0"
@@ -75,7 +75,7 @@ const HealthcareSection = () => {
           />
         </CardWrapper>
         <CardWrapper>
-          <TempRectangle
+          <Rectangle
             margin="min(-12%, -36.8px) 0 0 0"
             width="max(5.7vw, 65.75px)"
             padding="0 0 max(5.7vw, 65.75px) 0"
