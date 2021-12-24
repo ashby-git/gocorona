@@ -1,18 +1,18 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  /* width: 278.17px;
-  height: 276.52px; */
-  width: 24.2vw;
-  height: 24vw;
+  width: max(24.2vw, 278.17px);
+  height: max(24vw, 276.52px);
   background: white;
   box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
   border-radius: 8px;
+  display: grid;
+  margin: 0 0 max(10vh, 72.5px) 0;
 `;
 
 export const CardIcon = styled.img`
-  height: max(8vw, 92px);
-  /* width: 72px; */
+  height: max(8vw, 72px);
+  margin: max(5.5vh, 38px) auto max(8.3vh, 58px) auto;
 `;
 
 export const CardTitle = styled.h1`
@@ -22,6 +22,7 @@ export const CardTitle = styled.h1`
   text-align: center;
   letter-spacing: 0.08em;
   color: black;
+  margin: 0 10px 0 10px;
 `;
 
 export const CardDescription = styled.p`
@@ -30,5 +31,7 @@ export const CardDescription = styled.p`
   font-size: 12px;
   text-align: center;
   letter-spacing: 0.08em;
+  line-height: 138.5%;
   color: #616161;
+  margin: max(0.7vh, 5px) max(1.5vw, 18px) max(5vh, 36.5px) max(1.5vw, 18px);
 `;
