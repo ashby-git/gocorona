@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import ExpertsSection from "../components/experts-section/experts-section.component";
 import LandingPage from "../components/landing-page/landing-page.component";
 import MobileMenu from "../components/mobile-menu/mobile-menu.component";
+import MobileSection from "../components/mobile-section/mobile-section.component";
 import Navbar from "../components/navbar/navbar.component";
 import { PagesContainer } from "./pages.styles";
 
@@ -16,6 +18,8 @@ const Pages = () => {
       <MobileMenu isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle} />
       <LandingPage />
+      <MobileSection />
+      <ExpertsSection />
     </PagesContainer>
   );
 };
