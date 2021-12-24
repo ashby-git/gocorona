@@ -35,7 +35,6 @@ const HealthcareSection = () => {
             width="max(5.7vw, 65.75px)"
             padding="0 0 max(5.7vw, 65.75px) 0"
             left="-6%"
-            // mediaLeft="88%"
             borderRadius="max(1.3vw, 16px)"
             transform="rotate(-30deg)"
             zIndex="-1"
