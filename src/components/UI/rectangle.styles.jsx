@@ -23,5 +23,6 @@ export const Rectangle = styled.div`
     right: ${(props) => props.mediaRight};
     bottom: ${(props) => props.mediaBottom};
     left: ${(props) => props.mediaLeft};
+    margin: ${(props) => props.mediaMargin};
   }
 `;
