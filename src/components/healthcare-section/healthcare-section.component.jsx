@@ -6,11 +6,23 @@ import icon3 from "../../assests/healthcare-icon-3.svg";
 import {
   CardGroup,
   HealthcareSectionContainer,
+  HealthcareText,
+  HealthcareTitle,
+  HealthcareTitleBlack,
 } from "./healthcare-section.styles";
 
 const HealthcareSection = () => {
   return (
     <HealthcareSectionContainer>
+      <HealthcareTitle>
+        Healthcare
+        <HealthcareTitleBlack> at your Fingertips.</HealthcareTitleBlack>
+      </HealthcareTitle>
+      <HealthcareText>
+        Bringing premium healthcare features to your fingertips. User friendly
+        mobile platform to bring healthcare to your fingertips. Signup and be a
+        part of the new health culture.
+      </HealthcareText>
       <CardGroup>
         <IconTextCard
           cardIcon={icon1}
