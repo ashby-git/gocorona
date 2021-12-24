@@ -8,6 +8,7 @@ export const Card = styled.div`
   border-radius: 8px;
   display: grid;
   margin: 0 0 max(10vh, 72.5px) 0;
+  z-index: 2;
 `;
 
 export const CardIcon = styled.img`
