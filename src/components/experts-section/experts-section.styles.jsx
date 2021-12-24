@@ -99,23 +99,3 @@ export const CloseIcon = styled.img.attrs({ src: `${closeIcon}` })`
   height: 13px;
   width: 13px;
 `;
-
-export const TempRectangle = styled.div`
-  background-color: #ec5863;
-  position: absolute;
-  height: ${(props) => props.height};
-  width: ${(props) => props.width};
-  border-radius: ${(props) => props.borderRadius};
-  left: ${(props) => props.left};
-  transform: ${(props) => props.transform};
-  display: ${(props) => props.display};
-  padding: ${(props) => props.padding};
-  margin: ${(props) => props.margin};
-  z-index: ${(props) => props.zIndex};
-
-  @media (max-width: 950px) {
-    display: ${(props) => props.mediaDisplay};
-    left: ${(props) => props.mediaLeft};
-    margin: ${(props) => props.mediaMargin};
-  }
-`;

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import StatisticsBox from "../statistics-box/statistics-box.component";
 import TitleTextButton from "../title-text-button/title-text-button.component";
+import { Rectangle } from "../UI/rectangle.styles";
 import {
   BottomSide,
   CloseButton,
@@ -11,7 +12,6 @@ import {
   LeftSide,
   RightSide,
   StatisticsBoxWrapper,
-  TempRectangle,
   TitleTextButtonWrapper,
   TopSide,
 } from "./experts-section.styles";
@@ -26,7 +26,7 @@ const ExpertsSection = () => {
     <ExpertsSectionContainer>
       <TopSide>
         <StatisticsBoxWrapper>
-          <TempRectangle
+          <Rectangle
             margin="60px 0 0 -25px"
             width="66px"
             height="66px"
@@ -35,7 +35,7 @@ const ExpertsSection = () => {
             transform="rotate(-30deg)"
             zIndex="-1"
           />
-          <TempRectangle
+          <Rectangle
             margin="-40px 0 0 200px"
             width="97px"
             height="97px"
@@ -44,7 +44,7 @@ const ExpertsSection = () => {
             transform="rotate(105deg)"
             zIndex="-1"
           />
-          <TempRectangle
+          <Rectangle
             margin="-5px 0 0 575px"
             width="127.5px"
             height="127.5px"
