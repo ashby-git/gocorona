@@ -68,9 +68,19 @@ export const AppStoreImagesContainer = styled.div`
   width: max-content;
 `;
 
+export const GoogleImgWrapper = styled.a`
+  cursor: pointer;
+  margin: auto 0;
+`;
+
 export const GooglePlayStore = styled.img.attrs({
   src: `${googlePlayStore}`,
 })``;
+
+export const AppleImgWrapper = styled.a`
+  cursor: pointer;
+`;
+
 export const AppleAppStore = styled.img.attrs({
   src: `${appleAppStore}`,
 })``;

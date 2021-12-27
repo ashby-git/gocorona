@@ -5,9 +5,11 @@ import icon2 from "../../assests/healthcare-icon-2.svg";
 import icon3 from "../../assests/healthcare-icon-3.svg";
 import {
   AppleAppStore,
+  AppleImgWrapper,
   AppStoreImagesContainer,
   CardGroup,
   CardWrapper,
+  GoogleImgWrapper,
   GooglePlayStore,
   HealthcareSectionContainer,
   HealthcareText,
@@ -94,8 +96,15 @@ const HealthcareSection = () => {
         </CardWrapper>
       </CardGroup>
       <AppStoreImagesContainer>
-        <GooglePlayStore />
-        <AppleAppStore />
+        <GoogleImgWrapper href="https://play.google.com/" target="_blank">
+          <GooglePlayStore />
+        </GoogleImgWrapper>
+        <AppleImgWrapper
+          href="https://www.apple.com/app-store/"
+          target="_blank"
+        >
+          <AppleAppStore />
+        </AppleImgWrapper>
       </AppStoreImagesContainer>
     </HealthcareSectionContainer>
   );
