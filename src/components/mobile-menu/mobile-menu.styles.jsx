@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import mobileX from "../../assests/MENU_X.png";
+import { Link as LinkS } from "react-scroll";
 
 export const MobileMenuContainer = styled.aside`
   position: fixed;
@@ -34,7 +35,7 @@ export const MenuContainer = styled.div`
   margin: 10px auto 10px;
 `;
 
-export const MenuItem = styled.a`
+export const MenuItem = styled(LinkS)`
   text-transform: uppercase;
   text-decoration: none;
   font-family: "Rubik", sans-serif;

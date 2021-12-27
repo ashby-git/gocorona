@@ -23,7 +23,7 @@ const ExpertsSection = () => {
     setShowVideo(false);
   };
   return (
-    <ExpertsSectionContainer>
+    <ExpertsSectionContainer id="experts">
       <TopSide>
         <StatisticsBoxWrapper>
           <Rectangle

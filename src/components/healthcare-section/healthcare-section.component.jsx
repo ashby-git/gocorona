@@ -20,7 +20,7 @@ import { Rectangle } from "../UI/rectangle.styles";
 
 const HealthcareSection = () => {
   return (
-    <HealthcareSectionContainer>
+    <HealthcareSectionContainer id="healthcare">
       <HealthcareTitle>
         Healthcare
         <HealthcareTitleBlack> at your Fingertips.</HealthcareTitleBlack>

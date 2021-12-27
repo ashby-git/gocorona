@@ -15,7 +15,7 @@ import {
 
 const MobileSection = () => {
   return (
-    <MobileSectionContainer>
+    <MobileSectionContainer id="mobile">
       <MobileLeftSide>
         <RectangleWrapper
           margin="min(-102%, -588px) 0 0 0"

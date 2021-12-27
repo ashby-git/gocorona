@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import goCoronaLogo from "../../assests/logo.png";
 import menuIcon from "../../assests/MENU_ICON.png";
+import { Link as LinkS } from "react-scroll";
 
 export const NavbarContainer = styled.div`
   display: flex;
@@ -60,7 +61,7 @@ export const LeftSide = styled.div`
   }
 `;
 
-export const NavbarItem = styled.a`
+export const NavbarItem = styled(LinkS)`
   padding: 14px 20px;
   text-transform: uppercase;
   text-decoration: none;

@@ -16,7 +16,7 @@ const LandingPage = () => {
   return (
     <>
       <Background />
-      <PageContent>
+      <PageContent id="landing">
         <Rectangle
           minHeight="600px"
           height="100%"
