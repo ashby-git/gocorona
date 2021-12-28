@@ -24,7 +24,7 @@ const Download = () => {
         <DownloadTitleBlack> the app now!</DownloadTitleBlack>
       </DownloadTitle>
       <DownloadDescription>
-        Get access to 24x7 support and our knowledgable experts. By donloading
+        Get access to 24x7 support and our knowledgeable experts. By downloading
         our app now, you can bring healthcare to your fingertips. Signup and be
         a part of the new health culture.
       </DownloadDescription>
