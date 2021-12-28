@@ -12,11 +12,7 @@ const MobileMenu = ({ isOpen, toggle }) => {
     <MobileMenuContainer isOpen={isOpen} onClick={toggle}>
       <MobileXIcon onClick={toggle} />
       <MenuContainer>
-        <Button
-          blue
-          href="https://en.wikipedia.org/wiki/COVID-19"
-          target="_blank"
-        >
+        <Button blue to="/download">
           download
         </Button>
         <MenuItem onClick={toggle} to="landing" smooth={true} duration={500}>
