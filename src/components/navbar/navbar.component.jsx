@@ -51,11 +51,7 @@ const Navbar = ({ toggle }) => {
           </NavbarItemContainer>
         </LeftSide>
         <NavbarButton>
-          <Button
-            blue
-            href="https://en.wikipedia.org/wiki/COVID-19"
-            target="_blank"
-          >
+          <Button blue to="/download">
             Download
           </Button>
         </NavbarButton>

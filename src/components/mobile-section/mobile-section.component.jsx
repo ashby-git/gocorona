@@ -66,7 +66,7 @@ const MobileSection = () => {
             titleRed={"Corona."}
             text="24x7 Support and user friendly mobile platform to bring healthcare to your fingertips. Signup and be a part of the new health culture."
             redButton
-            buttonLink="https://en.wikipedia.org/wiki/COVID-19"
+            to="/download"
             buttonText="features"
           />
         </TitleTextButtonWrapper>

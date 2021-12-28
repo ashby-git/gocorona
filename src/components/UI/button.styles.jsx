@@ -1,6 +1,8 @@
 import styled, { css } from "styled-components";
 
-export const Button = styled.a`
+import { Link as LinkR } from "react-router-dom";
+
+export const Button = styled(LinkR)`
   border-radius: 5px;
   padding: 14px 29px;
   width: max-content;
@@ -11,7 +13,6 @@ export const Button = styled.a`
   font-family: "Raleway", sans-serif;
   font-size: 10px;
   letter-spacing: 0.14em;
-
   margin: auto;
 
   ${(props) =>

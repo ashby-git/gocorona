@@ -7,7 +7,7 @@ import MobileSection from "../components/mobile-section/mobile-section.component
 import Navbar from "../components/navbar/navbar.component";
 import { PagesContainer } from "./pages.styles";
 
-const Pages = () => {
+const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -26,4 +26,4 @@ const Pages = () => {
   );
 };
 
-export default Pages;
+export default Home;
