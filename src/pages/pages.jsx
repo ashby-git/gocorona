@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import ExpertsSection from "../components/experts-section/experts-section.component";
+import HealthcareSection from "../components/healthcare-section/healthcare-section.component";
 import LandingPage from "../components/landing-page/landing-page.component";
 import MobileMenu from "../components/mobile-menu/mobile-menu.component";
 import MobileSection from "../components/mobile-section/mobile-section.component";
 import Navbar from "../components/navbar/navbar.component";
 import { PagesContainer } from "./pages.styles";
 
-const Pages = () => {
+const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -20,8 +21,9 @@ const Pages = () => {
       <LandingPage />
       <MobileSection />
       <ExpertsSection />
+      <HealthcareSection />
     </PagesContainer>
   );
 };
 
-export default Pages;
+export default Home;

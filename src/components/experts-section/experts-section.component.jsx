@@ -23,7 +23,7 @@ const ExpertsSection = () => {
     setShowVideo(false);
   };
   return (
-    <ExpertsSectionContainer>
+    <ExpertsSectionContainer id="experts">
       <TopSide>
         <StatisticsBoxWrapper>
           <Rectangle
@@ -71,7 +71,7 @@ const ExpertsSection = () => {
               titleBlue="experts."
               text="Book appointments or submit queries into thousands of forums concerning health issues and prevention against noval Corona Virus."
               redButton
-              buttonLink="https://en.wikipedia.org/wiki/COVID-19"
+              to="/download"
               buttonText="features"
             />
           </TitleTextButtonWrapper>

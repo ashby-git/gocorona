@@ -19,7 +19,7 @@ const TitleTextButton = (props) => {
       <Text>{props.text}</Text>
 
       <ButtonContainer>
-        <Button red={props.redButton} href={props.buttonLink} target="_blank">
+        <Button red={props.redButton} to={props.to}>
           {props.buttonText}
         </Button>
       </ButtonContainer>

@@ -33,42 +33,25 @@ const Navbar = ({ toggle }) => {
     <>
       <NavbarContainer scrollNav={scrollNav}>
         <MenuIcon onClick={toggle} />
-
         <LeftSide scrollNav={scrollNav}>
           <NavbarLogo onClick={scrollToTop} />
           <NavbarItemContainer scrollNav={scrollNav}>
-            <NavbarItem
-              href="https://en.wikipedia.org/wiki/COVID-19"
-              target="_blank"
-            >
+            <NavbarItem to="landing" smooth={true} duration={500}>
               home
             </NavbarItem>
-            <NavbarItem
-              href="https://en.wikipedia.org/wiki/COVID-19"
-              target="_blank"
-            >
+            <NavbarItem to="mobile" smooth={true} duration={500}>
               features
             </NavbarItem>
-            <NavbarItem
-              href="https://en.wikipedia.org/wiki/COVID-19"
-              target="_blank"
-            >
+            <NavbarItem to="experts" smooth={true} duration={500}>
               support
             </NavbarItem>
-            <NavbarItem
-              href="https://en.wikipedia.org/wiki/COVID-19"
-              target="_blank"
-            >
+            <NavbarItem to="healthcare" smooth={true} duration={500}>
               contact us
             </NavbarItem>
           </NavbarItemContainer>
         </LeftSide>
         <NavbarButton>
-          <Button
-            blue
-            href="https://en.wikipedia.org/wiki/COVID-19"
-            target="_blank"
-          >
+          <Button blue to="/download">
             Download
           </Button>
         </NavbarButton>

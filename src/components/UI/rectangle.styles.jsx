@@ -9,8 +9,6 @@ export const Rectangle = styled.div`
   width: ${(props) => props.width};
   border-radius: ${(props) => props.borderRadius};
   top: ${(props) => props.top};
-  right: ${(props) => props.right};
-  bottom: ${(props) => props.bottom};
   left: ${(props) => props.left};
   transform: ${(props) => props.transform};
   display: ${(props) => props.display};
@@ -19,9 +17,6 @@ export const Rectangle = styled.div`
 
   @media (max-width: 950px) {
     display: ${(props) => props.mediaDisplay};
-    top: ${(props) => props.mediaTop};
-    right: ${(props) => props.mediaRight};
-    bottom: ${(props) => props.mediaBottom};
     left: ${(props) => props.mediaLeft};
     margin: ${(props) => props.mediaMargin};
   }
