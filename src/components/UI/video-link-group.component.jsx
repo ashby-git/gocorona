@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Iframe,
   LinkText,
@@ -16,6 +16,11 @@ const VideoLinkGroup = (props) => {
   const closeModal = () => {
     setShowModal(false);
   };
+
+  useEffect(() => {
+    const body = document.querySelector("body");
+    body.style.overflow = showModal ? "hidden" : "auto";
+  }, [showModal]);
 
   return (
     <>
