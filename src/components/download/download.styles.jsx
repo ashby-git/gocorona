@@ -24,9 +24,10 @@ export const Logo = styled.img.attrs({
   src: `${goCoronaLogo}`,
 })`
   display: flex;
+  margin: 20px 0 0 52px;
 
   @media (max-width: 950px) {
-    margin: 0 auto;
+    margin: 20px auto 0;
   }
 `;
 
