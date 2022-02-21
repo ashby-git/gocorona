@@ -1,6 +1,6 @@
 # GoCorona
 
-#### [Live Website](https://gocorona-rho.vercel.app/)
+#### [Live Website](https://gocorona-am.vercel.app/)
 
 Desktop             |  Mobile
 :-------------------------:|:-------------------------:
